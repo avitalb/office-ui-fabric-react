@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { LabelBasicExample } from './examples/Label.Basic.Example';
 
+import { LabelView } from './LabelView';
+
 import { IDocPageProps } from '../../common/DocPage.types';
 import { LabelStatus } from './Label.checklist';
 
@@ -16,7 +18,7 @@ export const LabelPageProps: IDocPageProps = {
     {
       title: 'Label',
       code: LabelBasicExampleCode,
-      view: <LabelBasicExample />
+      view: LabelView()
     }
   ],
   propertiesTablesSources: [require<string>('!raw-loader!office-ui-fabric-react/src/components/Label/Label.types.ts')],
