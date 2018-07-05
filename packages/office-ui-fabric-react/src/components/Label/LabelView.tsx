@@ -24,7 +24,7 @@ export const LabelView = () => (
     <LabelBasicExample />
     <form action="https://codepen.io/pen/define" method="POST" target="_blank">
       <input type="hidden" name="data" value={JSONstring} />
-      <input type="submit" value="Create New CodePen from this example!" />
+      <input type="submit" value="Codepen example" />
     </form>
   </div>
 );
