@@ -1,0 +1,14 @@
+let {
+  Icon,
+  Fabric
+} = window.Fabric;
+
+const IconBasicExample = () => (
+    <div>
+      <Icon iconName="CompassNW" className="ms-IconExample" />
+      <Icon iconName="Dictionary" className="ms-IconExample" />
+      <Icon iconName="TrainSolid" className="ms-IconExample" />
+    </div>
+);
+
+ReactDOM.render(<IconBasicExample/>,document.getElementById("content"))
