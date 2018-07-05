@@ -4,11 +4,9 @@ let {
 } = window.Fabric;
 
 const BreadcrumbBasicExample = () => (
-    <div>
-      <div>
-        <Checkbox label="Standard Checkbox" ariaDescribedBy={'descriptionID'} />
-      </div>
-    </div>
+  <div>
+    <Checkbox label="Standard Checkbox" ariaDescribedBy={'descriptionID'} />
+  </div>
 );
 
 ReactDOM.render(<BreadcrumbBasicExample/>,document.getElementById("content"))
