@@ -1,0 +1,18 @@
+let {
+  Label,
+  MessageBar,
+  Fabric,
+  Link
+} = window.Fabric;
+
+const MessageBarBasicExample = () => (
+    <div>
+    <Label>Default MessageBar</Label>
+    <MessageBar>
+      Info lorem ipsum dolor sit amet.{' '}
+      <Link href="www.bing.com">Visit our website.</Link>
+    </MessageBar>
+    </div>
+);
+
+ReactDOM.render(<MessageBarBasicExample/>,document.getElementById("content"))
