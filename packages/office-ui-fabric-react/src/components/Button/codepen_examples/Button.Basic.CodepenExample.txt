@@ -1,0 +1,18 @@
+let {
+  Label,
+  DefaultButton,
+  Fabric
+} = window.Fabric;
+
+const ButtonBasicExample = () => (
+    <div>
+      <Label>Standard Button </Label>
+      <DefaultButton
+        disabled={false}
+        checked={true}
+        text="Button"
+      />
+    </div>
+);
+
+ReactDOM.render(<ButtonBasicExample/>,document.getElementById("content"))
