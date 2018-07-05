@@ -1,0 +1,15 @@
+let {
+  Shimmer,
+  ShimmerElementType,
+  Fabric
+} = window.Fabric;
+
+const ShimmerBasicExample = () => (
+  <div>
+      <Shimmer
+        shimmerElements={[{ type: ShimmerElementType.circle }, { type: ShimmerElementType.gap, width: '2%' }, { type:ShimmerElementType.line }]}
+      />
+  </div>
+);
+
+ReactDOM.render(<ShimmerBasicExample/>,document.getElementById("content"));
