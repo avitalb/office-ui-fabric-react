@@ -1,0 +1,19 @@
+let {
+  SpinButton,
+  Fabric
+} = window.Fabric;
+
+const SpinButtonBasicExample = () => (
+  <div>
+      <SpinButton
+        defaultValue="0"
+        label={'Basic SpinButton:'}
+        min={0}
+        max={100}
+        step={1}
+        iconProps={{ iconName: 'IncreaseIndentLegacy' }}
+      />
+  </div>
+);
+
+ReactDOM.render(<SpinButtonBasicExample/>,document.getElementById("content"));
