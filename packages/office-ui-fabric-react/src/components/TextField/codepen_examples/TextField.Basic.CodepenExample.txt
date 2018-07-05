@@ -1,0 +1,15 @@
+let {
+  TextField,
+  Fabric
+} = window.Fabric;
+
+const TextFieldBasicExample = () => (
+      <div className="docs-TextFieldExample">
+        <TextField placeholder="I am a placeholder." ariaLabel="Please enter text here" />
+        <TextField label="Standard" />
+        <TextField label="Required" multiline rows={4} required={true} />
+        <TextField label="With error message" multiline rows={4} errorMessage="This is an error message." />
+      </div>
+);
+
+ReactDOM.render(<TextFieldBasicExample/>,document.getElementById("content"))
