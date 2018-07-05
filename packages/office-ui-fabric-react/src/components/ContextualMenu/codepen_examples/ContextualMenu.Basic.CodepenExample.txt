@@ -1,0 +1,36 @@
+let {
+  DefaultButton,
+  ContextualMenuItemType,
+  Fabric
+} = window.Fabric;
+
+const ContextualMenuBasicExample = () => (
+    <div>
+        <DefaultButton
+          id="ContextualMenuButton1"
+          text="Click for ContextualMenu"
+          menuProps={{
+            shouldFocusOnMount: true,
+            items: [
+              {
+                key: 'newItem',
+                text: 'New',
+                onClick: () => console.log('New clicked')
+              },
+              {
+                key: 'divider_1',
+                itemType: ContextualMenuItemType.Divider
+              },
+              {
+                key: 'disabled',
+                text: 'Disabled item',
+                disabled: true,
+                onClick: () => console.error('Disabled item should not be clickable.')
+              }
+            ]
+          }}
+        />
+    </div>
+);
+
+ReactDOM.render(<ContextualMenuBasicExample/>,document.getElementById("content"))
