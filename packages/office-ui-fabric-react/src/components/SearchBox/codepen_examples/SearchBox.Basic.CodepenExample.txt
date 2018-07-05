@@ -1,0 +1,14 @@
+let {
+  SearchBox,
+  Fabric
+} = window.Fabric;
+
+const SearchBoxBasicExample = () => (
+  <div>
+      <SearchBox
+        placeholder="Search"
+      />
+  </div>
+);
+
+ReactDOM.render(<SearchBoxBasicExample/>,document.getElementById("content"));
