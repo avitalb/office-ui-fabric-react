@@ -1,0 +1,15 @@
+let {
+  TooltipHost,
+  DefaultButton,
+  Fabric
+} = window.Fabric;
+
+const TooltipBasicExample = () => (
+    <div>
+      <TooltipHost content="This is the tooltip" id="myID" >
+        <DefaultButton aria-describedby="myID">Hover Over Me</DefaultButton>
+      </TooltipHost>
+    </div>
+);
+
+ReactDOM.render(<TooltipBasicExample/>,document.getElementById("content"));
