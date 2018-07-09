@@ -1,0 +1,23 @@
+let {
+  SwatchColorPicker,
+  Fabric
+} = window.Fabric;
+
+const ColorSwatchPickerBasicExample = () => (
+      <div>
+        <div>Simple circle swatch color picker:</div>
+        <SwatchColorPicker
+          columnCount={5}
+          cellShape={'circle'}
+          colorCells={[
+            { id: 'a', label: 'green', color: '#00ff00' },
+            { id: 'b', label: 'orange', color: '#ffa500' },
+            { id: 'c', label: 'blue', color: '#0000ff' },
+            { id: 'd', label: 'red', color: '#ff0000' },
+            { id: 'e', label: 'white', color: '#ffffff' }
+          ]}
+        />
+    </div>
+);
+
+ReactDOM.render(<ColorSwatchPickerBasicExample/>,document.getElementById("content"));
