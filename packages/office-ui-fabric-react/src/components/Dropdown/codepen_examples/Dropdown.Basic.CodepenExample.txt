@@ -1,0 +1,26 @@
+let {
+  Dropdown,
+  DropdownMenuItemType,
+  Fabric
+} = window.Fabric;
+
+const DropdownBasicExample = () => (
+  <div className= "docs-DropdownExample">
+      <Dropdown
+        placeHolder="Select an Option"
+        label="Basic uncontrolled example:"
+        id="Basicdrop1"
+        ariaLabel="Basic dropdown example"
+        options={[
+          { key: 'Header', text: 'Actions', itemType: DropdownMenuItemType.Header },
+          { key: 'A', text: 'Option a', title: 'I am option a.' },
+          { key: 'B', text: 'Option b' },
+          { key: 'C', text: 'Option c', disabled: true },
+          { key: 'D', text: 'Option d' },
+          { key: 'E', text: 'Option e' }
+        ]}
+      />
+  </div>
+);
+
+ReactDOM.render(<DropdownBasicExample/>,document.getElementById("content"));

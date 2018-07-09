@@ -1,0 +1,3 @@
+.docs-DropdownExample {
+  max-width: 300px;
+}
