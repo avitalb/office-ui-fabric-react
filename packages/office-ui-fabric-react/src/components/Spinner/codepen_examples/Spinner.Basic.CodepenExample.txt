@@ -1,0 +1,13 @@
+let {
+  Spinner,
+  SpinnerSize,
+  Fabric
+} = window.Fabric;
+
+const ColorSwatchPickerBasicExample = () => (
+   <div>
+      <Spinner size={SpinnerSize.medium} label="Spinner Label" />
+   </div>
+);
+
+ReactDOM.render(<ColorSwatchPickerBasicExample/>,document.getElementById("content"));
