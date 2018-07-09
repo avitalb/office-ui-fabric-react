@@ -1,0 +1,17 @@
+let {
+  Toggle,
+  Fabric
+} = window.Fabric;
+
+const ToggleBasicExample = () => (
+  <div>
+    <Toggle
+      defaultChecked={false}
+      label="Enabled and unchecked"
+      onText="On"
+      offText="Off"
+    />
+  </div>
+);
+
+ReactDOM.render(<ToggleBasicExample/>,document.getElementById("content"));
